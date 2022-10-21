@@ -81,8 +81,8 @@ func NewAPI(
 	router.GET("/api/post/:id", api.readPost)
 	postRouter := router.Group("/api/post", AuthMiddleware())
 	{
-		postRouter.POST("/", api.createPost)
-		postRouter.PUT("/", api.updatePost)
+		postRouter.POST("", api.createPost)
+		postRouter.PUT("", api.updatePost)
 		postRouter.POST("/images/:id", api.uploadPostImages)
 		postRouter.DELETE("/:id", api.deletePost)
 	}
@@ -90,8 +90,8 @@ func NewAPI(
 	router.GET("/api/comments", api.ReadAllComment)
 	commentRoutersWithAuth := router.Group("/api/comments", AuthMiddleware())
 	{
-		commentRoutersWithAuth.POST("/", api.CreateComment)
-		commentRoutersWithAuth.PUT("/", api.UpdateComment)
+		commentRoutersWithAuth.POST("", api.CreateComment)
+		commentRoutersWithAuth.PUT("", api.UpdateComment)
 		commentRoutersWithAuth.DELETE("/:id", api.DeleteComment)
 	}
 
@@ -103,14 +103,14 @@ func NewAPI(
 
 	commentLikeRouters := router.Group("/api/comments/:id/likes", AuthMiddleware())
 	{
-		commentLikeRouters.POST("/", api.CreateCommentLike)
-		commentLikeRouters.DELETE("/", api.DeleteCommentLike)
+		commentLikeRouters.POST("", api.CreateCommentLike)
+		commentLikeRouters.DELETE("", api.DeleteCommentLike)
 	}
 
 	// router.GET("api/notifications", api.GetAllNotifications)
 	notifRouter := router.Group("/api/notifications", AuthMiddleware())
 	{
-		notifRouter.GET("/", api.GetAllNotifications)
+		notifRouter.GET("", api.GetAllNotifications)
 		notifRouter.PUT("/read", api.SetReadNotif)
 	}
 
