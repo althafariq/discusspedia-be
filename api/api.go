@@ -8,8 +8,8 @@ import (
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
 
+	"github.com/althafariq/discusspedia-be/repository"
 	"github.com/gin-gonic/gin"
-	"github.com/pkl-min-1/discusspedia/backend/repository"
 )
 
 type API struct {

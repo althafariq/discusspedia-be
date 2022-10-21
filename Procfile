@@ -1,1 +1,1 @@
-web: discusspedia
+web: discusspedia-be

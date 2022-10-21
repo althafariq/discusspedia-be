@@ -3,7 +3,7 @@ package migration
 import (
 	"database/sql"
 
-	"github.com/pkl-min-1/discusspedia/backend/db/seeder"
+	"github.com/althafariq/discusspedia-be/db/seeder"
 
 	_ "github.com/mattn/go-sqlite3"
 )

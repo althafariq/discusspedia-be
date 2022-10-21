@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/althafariq/discusspedia-be/helper"
+	"github.com/althafariq/discusspedia-be/repository"
+	"github.com/althafariq/discusspedia-be/service"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
-	"github.com/pkl-min-1/discusspedia/backend/helper"
-	"github.com/pkl-min-1/discusspedia/backend/repository"
-	"github.com/pkl-min-1/discusspedia/backend/service"
 )
 
 type CreateCommentRequest struct {

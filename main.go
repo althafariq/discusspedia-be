@@ -3,8 +3,8 @@ package main
 import (
 	"database/sql"
 
-	"github.com/pkl-min-1/discusspedia/backend/api"
-	"github.com/pkl-min-1/discusspedia/backend/repository"
+	"github.com/althafariq/discusspedia-be/api"
+	"github.com/althafariq/discusspedia-be/repository"
 
 	_ "github.com/mattn/go-sqlite3"
 )

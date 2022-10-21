@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/althafariq/discusspedia-be/repository"
 	"github.com/gin-gonic/gin"
-	"github.com/pkl-min-1/discusspedia/backend/repository"
 )
 
 func (api API) CreatePostLike(c *gin.Context) {
