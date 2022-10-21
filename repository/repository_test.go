@@ -3,10 +3,10 @@ package repository_test
 import (
 	"database/sql"
 
+	"github.com/althafariq/discusspedia-be/db/migration"
+	"github.com/althafariq/discusspedia-be/repository"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/pkl-min-1/discusspedia/backend/db/migration"
-	"github.com/pkl-min-1/discusspedia/backend/repository"
 )
 
 var _ = Describe("Login Register Test", func() {
